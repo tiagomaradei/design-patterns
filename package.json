@@ -1,0 +1,42 @@
+{
+  "name": "desing-patterns",
+  "description": "Design Patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tiago Maradei <tiago.maradei@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify src/index.ts"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "3.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "ts-node-dev": "^1.0.0-pre.49",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.5"
+  }
+}
