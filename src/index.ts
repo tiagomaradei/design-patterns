@@ -6,4 +6,5 @@
 // import './Singleton';
 // import './Command';
 // import './Adapter';
-import './Facade';
+// import './Facade';
+import './TemplateMethod';
