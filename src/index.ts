@@ -7,4 +7,5 @@
 // import './Command';
 // import './Adapter';
 // import './Facade';
-import './TemplateMethod';
+// import './TemplateMethod';
+import './Iterator';
