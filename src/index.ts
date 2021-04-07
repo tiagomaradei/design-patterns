@@ -8,4 +8,5 @@
 // import './Adapter';
 // import './Facade';
 // import './TemplateMethod';
-import './Iterator';
+// import './Iterator';
+import './State';
